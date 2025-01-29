@@ -3,16 +3,16 @@ import { test } from "@playwright/test";
 test("Google test", async ({ page }) => {
   // navigate to google https://www.google.com
   await page.goto("https://www.google.com");
-  await page.waitForTimeout(1000);
+  
 
   let searchBox = page.locator("//textarea[@id='APjFqb']");
   
 
   await searchBox.fill("Cydeo");
-  await page.waitForTimeout(1000);  
+    
 
   await searchBox.press("Enter");
-  await page.waitForTimeout(1000); 
+  
 
 });
 

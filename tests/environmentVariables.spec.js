@@ -20,6 +20,6 @@ test("Bypass auth by encoding the credentials base 64 format", async ({
     Authorization: `Basic ${encodedCredential}`,
   });
   page.goto("https://practice.cydeo.com/basic_auth");
-  await page.waitForTimeout(2000);
+  
   
 });

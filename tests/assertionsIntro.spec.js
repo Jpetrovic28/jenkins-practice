@@ -14,7 +14,7 @@ test.describe("Test Group", () => {
     let checbox2 = page.locator("//input[@id='box2']");
 
     await checkboxes1.check();
-    await page.waitForTimeout(1000);
+    
     await checbox2.check();
     await page.waitForTimeout(1000); // wait for page to load before checking checkbox state
 
